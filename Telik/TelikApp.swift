@@ -17,15 +17,10 @@ struct TelikApp: App {
   @State var showAdd: Bool = false
   @State var showQuickSearch: Bool = false
   
-  func load() {
-    model.sources = Model.load()
-  }
-  
   var body: some Scene {
     WindowGroup {
       ContentView(showExport: $showExport, showAdd: $showAdd, showQuickSearch: $showQuickSearch)
         .environmentObject(model)
-        .onAppear(perform: load)
         .frame(minWidth: 700, idealWidth: 800, minHeight: 600, idealHeight: 900)
         .task {
 #if CHECK_FOR_UPDATES

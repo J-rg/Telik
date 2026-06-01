@@ -98,7 +98,11 @@ struct SourceInfo {
   @AppStorage("hideShorts") public var hideShorts = true
   
   let appUpdate = AppUpdate(githubURL: URL(string: "https://github.com/agentcooper/Telik")!)
-  
+
+  init() {
+    sources = Model.load()
+  }
+
   var tags: [String] {
     Set(sources.flatMap { $0.tags }).sorted()
   }
