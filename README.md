@@ -12,7 +12,7 @@
   
 # Telik
 
-**[Download for macOS 13+](https://github.com/agentcooper/Telik/releases/latest/download/Telik.app.zip)**
+**[Download for macOS 13+](https://github.com/agentcooper/Telik/releases/latest/download/Telik.zip)**
 
 **Also available in the [Mac App Store](https://apps.apple.com/en/app/telik/id6453161265) for a small fee. If you like the app, please consider buying it.**
 
